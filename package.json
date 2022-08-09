@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/milen-ale/movieHub#readme",
   "devDependencies": {
-    "css-loader": "^6.7.1"
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0"
   }
 }
