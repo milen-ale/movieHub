@@ -75,10 +75,18 @@ li a{
       display: flex;
       flex-direction: column;
   }
+  .movie-title{
+      font-size: 15px;
+      width: 60%;
+      font-weight: 400;
+  }
     
    button{
        margin-left: 1.5rem;
        width: 5rem;
+       background: none;
+       border: none;
+       color: #ababab; 
    }
 
  .item{
@@ -95,6 +103,13 @@ li a{
     padding: 0 10px;
   }
 
+  .item .item-content .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  
 
   .img-container {
     width: 100%;
@@ -111,4 +126,24 @@ li a{
 
   .img-container img:hover {
     transform: scale(0.9);
+  }
+  .btn-likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .btn-likes img,
+span {
+  font-size: 12px;
+}
+
+  .btn-likes img{
+    margin-right: 5px;
+    color: #ababab;
+    font-size: 15px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
   }

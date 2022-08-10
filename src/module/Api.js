@@ -1,6 +1,6 @@
 /* eslint-disable */ 
 const BASE_URL_MOVIE = 'https://api.tvmaze.com/shows';
-const  BASE_URL_INVOLVEMNT ='https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/'
+const  BASE_URL_INVOLVEMNT ='https://us-central1-involvement-api.cloudfunctions.net/capstoneApi'
 const APP_ID = 'jcfL4bzfqSk0ihg1PeIe'
 
 const getMovie = async() => {
