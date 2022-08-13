@@ -1,7 +1,9 @@
 # movieHub
+
 # MovieArena
 
 This website presents the best Tv shows. We have used TVmaze API to get the movie content. we have used Javascript, HTML and CSS to build the website.
+
 ## Overview
 
 <img width="765" alt="Movie" src="movies.png">
@@ -13,6 +15,7 @@ This website presents the best Tv shows. We have used TVmaze API to get the movi
 - CSS
 
 ## Overview
+
 <div>
     <img src="movies.PNG" alt="movies">
 </div>
@@ -23,12 +26,14 @@ This website presents the best Tv shows. We have used TVmaze API to get the movi
 
 ## Live video
 
-[Video Demonstration]()
+[Video Demonstration](https://drive.google.com/file/d/1mhAsbTUOKVE63LAskGVtuMM8jbEzb4eM/view?usp=sharing)
+
 ## Getting Started
 
 To use this project you need to clone the repository to your local machine, and open the folder then run index.html file which is the main file of the project.
 
 To get a local copy up and running follow these simple example steps.
+
 1. run - git clone https://github.com/EyasuTeshome/MovieArena.git
 2. run - cd MovieArena
 3. run - code . (to open the directory in VSCode you can change the command if you have another editor)
@@ -40,6 +45,7 @@ To get a local copy up and running follow these simple example steps.
 To work on this project locally you need to have Node.js installed in your machine.
 
 ### Setup
+
 - To run this project, you need to:
 - VSCode
 - JavaScript/HTML&CSS extensions
@@ -55,7 +61,6 @@ To work on this project locally you need to have Node.js installed in your machi
 - LinkedIn: [Milen Alebel](https://linkedin.com/in/MilenAlebel)
 
 👤 Thokozani ngubane
-
 
 - GitHub: [@MxoDevops](https://twitter.com/MxoDevops)
 - Twitter: [@godecuy](https://github.com/godecuy)
