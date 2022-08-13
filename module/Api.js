@@ -1,6 +1,4 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable indent */
-// import commentId from '../src/Apicomment.js';
+import commentId from '../src/Apicomment.js';
 import LikesApi from '../src/likes.js';
 
 export default class Movies {
@@ -45,106 +43,110 @@ export default class Movies {
       this.likes();
       this.addLikes();
     });
-    // comment button
-    // commentBtns.forEach((btn) => {
-    //   btn.addEventListener('click', (e) => {
-    //     const id = e.target.getAttribute('id');
-    //     const popup = data.filter(
-    //       (elem) => elem.show.id === parseInt(id, 10),
-    //     )[0].show;
-    //     const popupDiv = `<div class="show-popup">
-    //     <div class= "popups">
-    //     <div class="closebtn" id="delete">
-    //     <i class="fas fa-times"></i>
-    //     </div>  
-    //        <div class="firstPopUpDetails">
-    //        <div class="popup-image">
-    //        <img src="${popup.image.medium}" alt="character">
-    //            </div>
-    //            <div class="title">
-    //              <h1>${popup.name}</h1>
-    //                </div> 
-    //        </div>
+    const commentBtns = document.querySelectorAll('.button');
+    commentBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const id = e.target.getAttribute('id');
+        const popup = data.filter(
+          (elem) => elem.show.id === parseInt(id, 10)
+        )[0].show;
+        const popupDiv = `<div class="show-popup">
+        <div class= "popups">
+        <div class="closebtn" id="delete">
+        <i class="fas fa-times"></i>
+        </div>  
+           <div class="firstPopUpDetails">
+           <div class="popup-image">
+           <img src="${popup.image.medium}" alt="character">
+               </div>
+               <div class="title">
+                 <h1>${popup.name}</h1>
+                   </div> 
+           </div>
             
-    //        <div class="contents">
-    //        <div class="card">
+           <div class="contents">
+           <div class="card">
              
-    //          <ul class="details">
-    //            <li><p>Genre:</p> <span>${
-    //              popup.genres.toString() || 'Not Available'
-    //            }</span></li>
-    //            <li><p>Language:</p> <span>${popup.language}</span></li>
-    //            <li> <p>Premiered:</p> <span>${popup.premiered}</span></li>
-    //            <li> <p>Rating:</p> <span>${popup.rating.average}</span></li>
-    //            <li> <p>Official site:</p> <span><a class="link" href="${
-    //              popup.officialSite
-    //            }">Watch</a></span></li>
-    //          </ul>  
-    //        </div>
-    //        <div class="summary">
-    //        <h5 class="center">Summary</h5>
-    //        <p>${popup.summary}</p>
-    //      </div>
-    //      <div class="d-comments">
-    //      <h5 class="comment-count center">Comments 0</h5>
-    //      <ul class="display-comments"></ul>
-    //    </div>
+             <ul class="details">
+               <li><p>Genre:</p> <span>${
+                 popup.genres.toString() || 'Not Available'
+               }</span></li>
+               <li><p>Language:</p> <span>${popup.language}</span></li>
+               <li> <p>Premiered:</p> <span>${popup.premiered}</span></li>
+               <li> <p>Rating:</p> <span>${popup.rating.average}</span></li>
+               <li> <p>Official site:</p> <span><a class="link" href="${
+                 popup.officialSite
+               }">Watch</a></span></li>
+             </ul>  
+           </div>
+
+
+           <div class="summary">
+           <h5 class="center">Summary</h5>
+           <p>${popup.summary}</p>
+         </div>
+         <div class="d-comments">
+         <h5 class="comment-count center">Comments 0</h5>
+         <ul class="display-comments"></ul>
+       </div>
          
-    //        <div class="form-div">
-    //        <h5 class="center">Add comments</h5>
-    //        <form class = "form" action="">
-    //          <input class="username" type="text" placeholder="Your name ...">
-    //          <input class="comment" type="text" placeholder="Your comment ...">
-    //          <button class="add-comment button" type="submit">comment</button>
-    //        </form>
-    //        </div>
+           <div class="form-div">
+           <h5 class="center">Add comments</h5>
+           <form class = "form" action="">
+             <input class="username" type="text" placeholder="Your name ...">
+             <input class="comment" type="text" placeholder="Your comment ...">
+             <button class="add-comment button" type="submit">comment</button>
+           </form>
+           </div>
 
-    //     </div>
-    //     </div>`;
 
-    //     document.body.insertAdjacentHTML('beforeend', popupDiv);
-    //     const closeBtn = document.querySelector('#delete');
-    //     closeBtn.addEventListener('click', () => {
-    //       document.querySelector('.show-popup').remove();
-    //     });
-    //     this.commentCounter(id);
-    //     this.displayComment(id);
-    //   });
-    // });
+
+        </div>
+        </div>`;
+
+        document.body.insertAdjacentHTML('beforeend', popupDiv);
+        const closeBtn = document.querySelector('#delete');
+        closeBtn.addEventListener('click', () => {
+          document.querySelector('.show-popup').remove();
+        });
+        this.commentCounter(id);
+        this.displayComment(id);
+      });
+    });
   };
 
   // comment section
-//   static displayComment = (id) => {
-//     const username = document.querySelector('.username');
-//     const comment = document.querySelector('.comment');
-//     const addCommentBtn = document.querySelector('.add-comment');
-//     addCommentBtn.addEventListener('click', (e) => {
-//       e.preventDefault();
+  static displayComment = (id) => {
+    const username = document.querySelector('.username');
+    const comment = document.querySelector('.comment');
+    const addCommentBtn = document.querySelector('.add-comment');
+    addCommentBtn.addEventListener('click', (e) => {
+      e.preventDefault();
 
-//       commentId.setComments(id, username.value, comment.value).then((data) => {
-//         if (data === 'Created') {
-//           this.commentCounter(id);
-//           username.value = '';
-//           comment.value = '';
-//         }
-//       });
-//     });
-//   };
+      commentId.setComments(id, username.value, comment.value).then((data) => {
+        if (data === 'Created') {
+          this.commentCounter(id);
+          username.value = '';
+          comment.value = '';
+        }
+      });
+    });
+  };
 
-//   static commentCounter = (id) => {
-//     commentId.getComments(id).then((data) => {
-//       const display = document.querySelector('.display-comments');
-//       const count = document.querySelector('.comment-count');
-//       count.textContent = `Comments (${commentId.counterComments(data)})`;
-//       display.innerHTML = '';
-//       data.forEach((item) => {
-//         const commentList = document.createElement('li');
+  static commentCounter = (id) => {
+    commentId.getComments(id).then((data) => {
+      const display = document.querySelector('.display-comments');
+      const count = document.querySelector('.comment-count');
+      count.textContent = `Comments (${commentId.counterComments(data)})`;
+      display.innerHTML = '';
+      data.forEach((item) => {
+        const commentList = document.createElement('li');
 
-//         commentList.textContent = `${item.creation_date} ${item.username} : ${item.comment}`;
-//         display.appendChild(commentList);
-//       });
-//     });
-//   };
+        commentList.textContent = `${item.creation_date} ${item.username} : ${item.comment}`;
+        display.appendChild(commentList);
+      });
+    });
+  };
 
   // likes-section
   static addLikes = () => {
