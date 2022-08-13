@@ -40,7 +40,7 @@ export default class Movies {
       <button id="${item.show.id}" class="button">Comments</button>`;
         movieContainer.appendChild(div);
       }
-      this.likes();
+      //   this.likes();
       this.addLikes();
     });
     const commentBtns = document.querySelectorAll('.button');
