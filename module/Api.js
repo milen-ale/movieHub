@@ -1,3 +1,7 @@
+/* eslint-disable  */
+
+import fetch from 'cross-fetch';
+
 import commentId from '../src/Apicomment.js';
 import LikesApi from '../src/likes.js';
 
@@ -12,8 +16,8 @@ export default class Movies {
       if (item.show.image !== null) {
         count += 1;
       }
-      const title = document.querySelector('.title');
-      if (title) title.textContent = `MovieHub (${count}) Movies `;
+      const title = document.querySelector('# main-title');
+      if (title) title.textContent = `Top movies (${count}) Movies `;
     });
 
     return count;
@@ -40,7 +44,7 @@ export default class Movies {
       <button id="${item.show.id}" class="button">Comments</button>`;
         movieContainer.appendChild(div);
       }
-      //   this.likes();
+      this.likes();
       this.addLikes();
     });
     const commentBtns = document.querySelectorAll('.button');
