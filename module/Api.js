@@ -15,8 +15,8 @@ export default class Movies {
       if (item.show.image !== null) {
         count += 1;
       }
-      const title = document.querySelector('.title');
-      if (title) title.textContent = `MovieHub (${count}) Movies `;
+      const title = document.querySelector('# main-title');
+      if (title) title.textContent = `Top movies (${count}) Movies `;
     });
 
     return count;
