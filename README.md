@@ -20,9 +20,7 @@ This website presents the best Tv shows. We have used TVmaze API to get the movi
 
 ## Live Demo
 
-[Live Demo Link]()
-
-## Live video
+[Live Demo Link](https://milen-ale.github.io/movieHub/)
 
 [Video Demonstration](https://drive.google.com/file/d/1mhAsbTUOKVE63LAskGVtuMM8jbEzb4eM/view?usp=sharing)
 

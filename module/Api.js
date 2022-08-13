@@ -16,7 +16,7 @@ export default class Movies {
       if (item.show.image !== null) {
         count += 1;
       }
-      const title = document.querySelector('# main-title');
+      const title = document.getElementById('main-title');
       if (title) title.textContent = `Top movies (${count}) Movies `;
     });
 
