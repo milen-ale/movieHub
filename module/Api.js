@@ -1,4 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable  */
+
 import fetch from 'cross-fetch';
 
 import commentId from '../src/Apicomment.js';
