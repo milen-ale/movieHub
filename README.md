@@ -32,7 +32,7 @@ To use this project you need to clone the repository to your local machine, and 
 
 To get a local copy up and running follow these simple example steps.
 
-1. run - git clone https://github.com/EyasuTeshome/MovieArena.git
+1. run - git clone https://github.com/milen-ale/MovieHub.git
 2. run - cd MovieArena
 3. run - code . (to open the directory in VSCode you can change the command if you have another editor)
 4. run - npm install
