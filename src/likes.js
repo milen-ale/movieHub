@@ -8,13 +8,13 @@ export default class LikesApi {
     return data;
   };
 
-  static setLikes = async (id) => {
-    const res = await fetch(this.url, {
-      method: 'post',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ item_id: id }),
-    });
-    const data = await res.text();
-    return data;
-  };
+  //   static setLikes = async (id) => {
+  //     const res = await fetch(this.url, {
+  //       method: 'post',
+  //       headers: { 'content-type': 'application/json' },
+  //       body: JSON.stringify({ item_id: id }),
+  //     });
+  //     const data = await res.text();
+  //     return data;
+  //   };
 }
