@@ -1,7 +1,5 @@
 # movieHub
 
-# MovieArena
-
 This website presents the best Tv shows. We have used TVmaze API to get the movie content. we have used Javascript, HTML and CSS to build the website.
 
 ## Overview
