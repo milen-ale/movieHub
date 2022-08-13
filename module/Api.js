@@ -1,5 +1,4 @@
 /* eslint-disable  */
-
 import fetch from 'cross-fetch';
 
 import commentId from '../src/Apicomment.js';
