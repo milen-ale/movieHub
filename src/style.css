@@ -125,12 +125,9 @@ button {
   height: 15px;
 }
 
-.each-movie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
-  border-radius: 1rem;
+.btn-likes img,
+span {
+  font-size: 12px;
 }
 
 .popup-image img {
@@ -138,9 +135,8 @@ button {
   width: 200px;
 }
 
-.btn-likes img,
-span {
-  font-size: 12px;
+.each-movie img {
+  border-radius: 12px;
 }
 
 .img-container img:hover {
@@ -153,7 +149,7 @@ span {
   align-items: center;
 }
 
-li {
+.each li {
   font-family: cursive, sans-serif;
   font-size: 25px;
 }
@@ -213,6 +209,14 @@ li {
   gap: 4px;
   padding: 10% 0 0 0;
   margin: 0;
+}
+
+.each-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 1rem;
 }
 
 .each {
