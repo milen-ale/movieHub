@@ -278,7 +278,7 @@ footer {
   border-radius: 10px;
   overflow-y: auto;
   height: 91vh;
-  background-color: black;
+  background-color: #736969;
   background-size: cover;
 }
 
@@ -368,7 +368,7 @@ footer {
     border-radius: 11px;
     overflow-y: auto;
     height: 99vh;
-    background-color: rgb(88, 88, 88);
+    background-color: #736969;
     background-size: cover;
   }
 
