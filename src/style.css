@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 0%, 25%, 0.898);
+  color: rgb(31, 30, 30);
+  font-family: sans-serif, 'Popins';
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 20px 0 20px;
+  color: blanchedalmond;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.navbar h1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navbar img {
+  height: 40px;
+  margin-right: 18px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  margin-left: auto;
+  gap: 16px;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: #ababab;
+}
+
+.footer a {
+  color: rgb(236, 166, 141);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.movie {
+  width: 400px;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  font-size: 15px;
+  width: 60%;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  margin-left: 1.5rem;
+  width: 8rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.item {
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.item .item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.item .item-content .texts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.img-container {
+  width: 100%;
+  height: 35vh;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-likes img {
+  margin-right: 5px;
+  color: #ababab;
+  font-size: 15px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.btn-likes img,
+span {
+  font-size: 12px;
+}
+
+.popup-image img {
+  height: 200px;
+  width: 200px;
+}
+
+.each-movie img {
+  border-radius: 12px;
+}
+
+.img-container img:hover {
+  transform: scale(0.9);
+}
+
+.btn-likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.each li {
+  font-family: cursive, sans-serif;
+  font-size: 25px;
+}
+
+.details li {
+  list-style: none;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 5px 7px 5px rgba(29, 26, 26, 0.75);
+}
+
+.display-comments li {
+  list-style-type: none;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.details li:hover {
+  background-color: rgb(93, 12, 12);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#movieul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: cursive;
+}
+
+#movieul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+#movieul li a {
+  text-decoration: none;
+  border: 1px solid lightblue;
+  color: gray;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+#movieul li a:hover {
+  color: #333;
+  background-color: transparent;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 10% 0 0 0;
+  margin: 0;
+}
+
+.each-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+.each {
+  text-align: center;
+  line-height: 40px;
+  width: 21rem;
+  margin-top: 1rem;
+  color: rgb(187, 130, 130);
+  list-style-type: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(4, 1, 1);
+  color: rgb(212, 208, 208);
+  text-align: center;
+}
+
+.popup {
+  background-color: red;
+  position: relative;
+  height: 90vh;
+  width: 60vw;
+  color: red;
+}
+
+.show-popup {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.popups {
+  position: absolute;
+  width: 81%;
+  margin: 0 auto;
+  top: 51%;
+  padding: 21px;
+  max-width: 51%;
+  left: 51%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow-y: auto;
+  height: 91vh;
+  background-color: #736969;
+  background-size: cover;
+}
+
+.firstPopUpDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closebtn {
+  display: flex;
+  justify-content: end;
+}
+
+.contents {
+  border-radius: 12px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 5px;
+  padding: 4px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username {
+  padding: 5px;
+}
+
+.summary p {
+  text-align: center;
+  width: 25rem;
+  color: rgb(232, 128, 128);
+  margin: 0 auto;
+}
+
+.comment {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30% 0 0 0;
+    margin: 0;
+  }
+
+  .popups {
+    position: absolute;
+    margin: 0 auto;
+    top: 52%;
+    padding: 19px;
+    max-width: 99%;
+    width: 100%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 40px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 11px;
+    overflow-y: auto;
+    height: 99vh;
+    background-color: #736969;
+    background-size: cover;
+  }
+
+  .div {
+    margin: 0;
+  }
+
+  .summary p {
+    text-align: center;
+    width: 11rem;
+    color: rgb(238, 238, 238);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30% 0 0 0;
+    margin: 0;
+    background-size: 1000%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
