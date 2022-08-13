@@ -48,7 +48,7 @@ export default class Movies {
       btn.addEventListener('click', (e) => {
         const id = e.target.getAttribute('id');
         const popup = data.filter(
-          (elem) => elem.show.id === parseInt(id, 10)
+          (elem) => elem.show.id === parseInt(id, 10),
         )[0].show;
         const popupDiv = `<div class="show-popup">
         <div class= "popups">
